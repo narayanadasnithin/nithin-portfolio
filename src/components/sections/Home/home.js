@@ -45,9 +45,11 @@ const Home = () => {
           )}
         </motion.div>
 
-        <Tilt className="tiltWrapper">
-         
-            <img src={image} alt="profile" className="image" />
+        <Tilt className="tiltWrapper"
+        tiltEnable={false}        
+          scale={1}                   
+          glareEnable={false} >
+          <img src={image} alt="profile" className="image" />
           
         </Tilt>
       </div>
