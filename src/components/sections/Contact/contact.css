@@ -1,0 +1,139 @@
+#Contact {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.contactContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  max-width: 1100px;
+  min-width: none;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.contactTitleWrapper {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contactPageTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
+   margin: 100px 0 20px 0;
+}
+
+.contactSubText {
+  font-size: 1.5rem;
+  color: #444;
+  line-height: 1.6;
+  text-transform: none;
+}
+
+.contactForm {
+  flex: 1;
+  min-width: 320px;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name,
+.email,
+.msg {
+  width: 100%;
+  font-size: 1rem;
+  margin: 10px 0;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  border: 2px solid #ccc;
+  background-color: #fafafa;
+}
+
+.name:focus,
+.email:focus,
+.msg:focus {
+  border-color: black;
+  outline: none;
+  background-color: #fff;
+}
+
+.msg {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 200px;
+}
+
+.inputError {
+  border-color: #e74c3c !important;
+  background-color: #fdecea !important;
+  box-shadow: 0 0 5px #e74c3c88 !important;
+}
+
+.errorMsg {
+  width: 100%;
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin: -5px 0 10px 0;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.submitBtn {
+  font-size: 1.1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.6rem 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  box-shadow: 0 5px 15px #0077ff88;
+}
+
+.submitBtn:hover {
+  background-color: #005bbb;
+  transform: scale(1.05);
+}
+
+.formStatus {
+  font-size: 15px;
+  color: green;
+  font-weight: 600;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* ✅ Responsive layout for mobile */
+@media (max-width: 768px) {
+  .contactContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .contactPageTitle {
+    font-size: 2.2rem;
+  }
+
+  .contactForm {
+    width: 100%;
+    padding: 20px;
+  }
+}

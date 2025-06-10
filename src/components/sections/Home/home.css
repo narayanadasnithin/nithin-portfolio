@@ -1,0 +1,144 @@
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap");
+
+  :root {
+    --primary-color: #000000;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: var(--primary-color);
+    background-color: #fff;
+  }
+
+  #Home {
+    padding: 50px 30px;
+  }
+
+  .homeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  .homeContent {
+    flex: 1;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+  }
+
+  .nam {
+    font-size: 20px;
+  }
+
+  .staticName {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+
+  .introName {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    white-space: nowrap;
+  }
+
+  .introPara {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    max-width: 600px;
+    min-height: 70px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color);
+  }
+
+  .tiltWrapper {
+    flex: 1;
+    max-width: 350px;
+  }
+
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px var(--shadow-color);
+  }
+
+  .typewriter-cursor {
+    display: none !important;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
+
+    #Home {
+      padding: 30px 20px;  
+      min-height: auto;
+    }
+
+    .homeContainer {
+      margin: 0;
+      gap: 15px;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+    .homeContent,
+    .tiltWrapper {
+      flex: 1 1 100%;
+      max-width: 100%;
+      margin: 0;
+        transition: all 0.3s ease;
+    }
+
+    .nam,
+    .staticName,
+    .introName,
+    .introPara {
+      text-align: center;
+    }
+
+    .staticName {
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+    }
+
+    .introName {
+      font-size: clamp(1.4rem, 4vw, 1.8rem);
+      white-space: normal;
+    }
+
+    .introPara {
+      font-size: clamp(1rem, 3vw, 1.5rem);
+      overflow-wrap: break-word;
+      
+    }
+
+    .image {
+      max-width: 350px;
+      display: block;
+      margin: auto;
+    }
+    
+  }
