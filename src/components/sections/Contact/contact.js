@@ -75,7 +75,7 @@ export const Contact = () => {
         <animated.div className="contactTitleWrapper" style={titleSpring} ref={titleRef}>
           <h1 className="contactPageTitle">Let's Connect</h1>
           <p className="contactSubText">
-            I'm always open to new opportunities and collaborations. Drop a Mail !
+            I'm always open to new opportunities and collaborations. Drop a Mail 
           </p>
         </animated.div>
 
