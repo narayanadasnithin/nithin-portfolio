@@ -14,7 +14,7 @@ const events = [
     description: 'Electronics and Communication Engineering',
     iconClass: 'education-icon',
     type: 'timeline__event--type1',
-    delay: 'delay-3s'
+    delay: 'delay-3s',
   },
   {
     icon: projectIcon,
